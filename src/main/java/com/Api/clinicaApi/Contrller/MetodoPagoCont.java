@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/metodoPagos")
+@RequestMapping("/api/metodoPagos")//no trae nada
 public class MetodoPagoCont {
     @Autowired
     private MetodoPagoServ metodoPagoServ;

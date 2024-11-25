@@ -10,7 +10,7 @@ public class Laboratorio {
     private Long IdLaboratorio;
     private String Ubicacion;
     private String Telefono;
-    private String Especialidad;
+    private String Especialidades;
 
     public Long getIdLaboratorio() {
         return IdLaboratorio;
@@ -37,10 +37,10 @@ public class Laboratorio {
     }
 
     public String getEspecialidad() {
-        return Especialidad;
+        return Especialidades;
     }
 
     public void setEspecialidad(String especialidad) {
-        Especialidad = especialidad;
+        Especialidades = especialidad;
     }
 }

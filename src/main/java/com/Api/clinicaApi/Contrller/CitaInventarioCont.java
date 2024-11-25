@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/citaInventarios")
+@RequestMapping("/api/citaInventarios")//no trae nada
 public class CitaInventarioCont {
     @Autowired
     private CitaInventarioServ citaInventarioServ;

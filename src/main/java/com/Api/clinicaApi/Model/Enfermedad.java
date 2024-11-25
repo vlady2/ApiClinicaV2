@@ -3,7 +3,7 @@ package com.Api.clinicaApi.Model;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "Cita")
+@Table(name = "Enfermedad")
 public class Enfermedad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

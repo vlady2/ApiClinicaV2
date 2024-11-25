@@ -32,7 +32,7 @@ public class MedicoService {
             medico.setNombre(medicoActualizada.getNombre());
             medico.setApellidos(medicoActualizada.getApellidos());
             medico.setDUI(medicoActualizada.getDUI());
-            medico.setIdEspeciualidad(medicoActualizada.getIdEspeciualidad());
+            medico.setIdEspecialidad(medicoActualizada.getIdEspecialidad());
             medico.setHoraAtencion(medicoActualizada.getHoraAtencion());
             medico.setEstado(medicoActualizada.getEstado());
             return medicoRepository.save(medico);

@@ -11,8 +11,8 @@ public class Medico {
     private String Nombre;
     private String Apellidos;
     private String DUI;
-    private int IdEspeciualidad;
-    private String HoraAtencion;
+    private int IdEspecialidad;
+    private String HorarioAtencion;
     private String Estado;
 
     public Long getIdMedico() {
@@ -47,20 +47,20 @@ public class Medico {
         this.DUI = DUI;
     }
 
-    public int getIdEspeciualidad() {
-        return IdEspeciualidad;
+    public int getIdEspecialidad() {
+        return IdEspecialidad;
     }
 
-    public void setIdEspeciualidad(int idEspeciualidad) {
-        IdEspeciualidad = idEspeciualidad;
+    public void setIdEspecialidad(int idEspecialidad) {
+        IdEspecialidad = idEspecialidad;
     }
 
     public String getHoraAtencion() {
-        return HoraAtencion;
+        return HorarioAtencion;
     }
 
     public void setHoraAtencion(String horaAtencion) {
-        HoraAtencion = horaAtencion;
+        HorarioAtencion = horaAtencion;
     }
 
     public String getEstado() {

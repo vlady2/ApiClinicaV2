@@ -8,6 +8,7 @@ public class MetodoPago {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long IdMetodoPago;
+
     private String Descripcion;
 
     public Long getIdMetodoPago() {

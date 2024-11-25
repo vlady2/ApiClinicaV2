@@ -17,4 +17,59 @@ public class Examen {
     private LocalDate FechaRealizacion;
     private LocalDate FechaResultado;
 
+    public Long getIdExamen() {
+        return IdExamen;
+    }
+
+    public void setIdExamen(Long idExamen) {
+        IdExamen = idExamen;
+    }
+
+    public int getIdCita() {
+        return IdCita;
+    }
+
+    public void setIdCita(int idCita) {
+        IdCita = idCita;
+    }
+
+    public String getTipo() {
+        return Tipo;
+    }
+
+    public void setTipo(String tipo) {
+        Tipo = tipo;
+    }
+
+    public String getResultado() {
+        return Resultado;
+    }
+
+    public void setResultado(String resultado) {
+        Resultado = resultado;
+    }
+
+    public int getIdLaboratorio() {
+        return IdLaboratorio;
+    }
+
+    public void setIdLaboratorio(int idLaboratorio) {
+        IdLaboratorio = idLaboratorio;
+    }
+
+    public LocalDate getFechaRealizacion() {
+        return FechaRealizacion;
+    }
+
+    public void setFechaRealizacion(LocalDate fechaRealizacion) {
+        FechaRealizacion = fechaRealizacion;
+    }
+
+    public LocalDate getFechaResultado() {
+        return FechaResultado;
+    }
+
+    public void setFechaResultado(LocalDate fechaResultado) {
+        FechaResultado = fechaResultado;
+    }
 }

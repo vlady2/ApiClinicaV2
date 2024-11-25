@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/laboratorios mal")
+@RequestMapping("/api/laboratorios")
 public class LaboratorioController {
     @Autowired
     private LaboratorioService laboratorioService;
-
+    //arreglar
     @GetMapping
     public List<Laboratorio> listarLaboratorio() {
         return laboratorioService.listarLaboratorio();

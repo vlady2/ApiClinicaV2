@@ -15,16 +15,26 @@ public class CitaInventarioServ {
     @Autowired
     private CitaInventarioRepos citaInventarioRepos;
 
-    public List<CitaInventario> listarCitas() {
+    public List<CitaInventario> listarCitasInv() {
         return citaInventarioRepos.findAll();
     }
 
-    public Optional<CitaInventario> obtenerCitaPorId(Long id) {
+    public Optional<CitaInventario> obtenerCitaInvPorId(Long id) {
         return citaInventarioRepos.findById(id);
     }
 
     public CitaInventario guardarCitaInv(CitaInventario citaInventario) {
         return citaInventarioRepos.save(citaInventario);
+    }
+
+    public CitaInventario actualizarCitaInv(Long id, CitaInventario citaActualizada) {
+        return citaInventarioRepos.findById(id).map(citaInventario -> {
+            citaInventario.setIdCitaInventario(citaActualizada.getIdCitaInventario());
+            citaInventario.setIdCita(citaActualizada.getIdCita());
+            citaInventario.setIdInventario(citaActualizada.getIdInventario());
+            citaInventario.setCantidad(citaActualizada.getCantidad());
+            return citaInventarioRepos.save(citaInventario);
+        }).orElseThrow(() -> new RuntimeException("Cita no encontrada"));
     }
 
     public void eliminarCitaInv(Long id) {

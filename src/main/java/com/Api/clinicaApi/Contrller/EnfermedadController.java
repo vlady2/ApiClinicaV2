@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/enfermedades mal")
+@RequestMapping("/api/enfermedades")
 public class EnfermedadController {
     @Autowired
     private EnfermedadService enfermedadService;
-
+    //arreglar
     @GetMapping
     public List<Enfermedad> listarEnfermedad() {
         return enfermedadService.listarEnfermedad();

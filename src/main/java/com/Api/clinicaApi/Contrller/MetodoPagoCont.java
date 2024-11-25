@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/metodoPagos mal")
+@RequestMapping("/api/metodoPagos")
 public class MetodoPagoCont {
     @Autowired
     private MetodoPagoServ metodoPagoServ;
-
+    //arreglar
     @GetMapping
     public List<MetodoPago> listarMetodoPago() {
         return metodoPagoServ.listarMetodoPago();

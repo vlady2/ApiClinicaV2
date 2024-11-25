@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/procedimientos")
+@CrossOrigin(origins = {"*"})
 public class ProcedimientoController {
     @Autowired
     private ProcedimientoService procedimientoService;

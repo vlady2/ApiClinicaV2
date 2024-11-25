@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/recetas")
+@CrossOrigin(origins = {"*"})
 public class RecetaController {
     @Autowired
     RecetaService recetaService;

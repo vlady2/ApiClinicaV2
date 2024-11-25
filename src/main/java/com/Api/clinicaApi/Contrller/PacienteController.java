@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/pacientes")//
+@CrossOrigin(origins = {"*"})
 public class PacienteController {
     @Autowired
     private PacienteService pacienteService;

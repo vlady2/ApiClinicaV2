@@ -11,6 +11,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/citaInventarios")//no trae nada
+@CrossOrigin(origins = {"*"})
 public class CitaInventarioCont {
     @Autowired
     private CitaInventarioServ citaInventarioServ;
